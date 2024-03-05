@@ -1,27 +1,38 @@
-# Pre-Requisites:
-NodeJS Latest
+## Prerequisites
 
-# SetUp:
-1. Clone the repository in your local or have the project setup after extraction from zip
-2. Run 'npm install' to install dependencies
-3. Run 'npx wdio run ./wdio.conf.js' to complile and run test
+Before running this project, ensure that you have the following prerequisites installed and configured:
 
-# cloudray-ui-assessment
+1. Node.js and npm (version v20.11.0)
+   - Installation instructions: [Node.js official website](https://nodejs.org/)
+2. WebDriverIO (version 8.32.4 )
+   - Installation: `npm install @wdio/cli`
+3. Visual Studio Code: Download and install Visual Studio Code from the official website: (https://code.visualstudio.com/download)
+4. Chrome or Firefox web browser (latest version)
+   - Download: [Google Chrome](https://www.google.com/chrome/) | [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
+5. Git 
+    - provide commands like git config --global user.name "Your Name" and git config --global user.email "youremail@example.com".
 
-    Scenario: Verify Apply job layover is displayed on clicking Apply now button on searched job id
-        Given Naviage to "https://www.geniehealthcare.com/#/home" screen
-        When Click on Caregivers tab in the menu
-        Then Genie Healthcare Jobs dashboard is opened in new tab
-        When Note the first job details like JobId, State, City, Shift and Specialty
-        When Click on first job Id
-        Then Job Details screen for first job id is displayed
-        Then verify JobId, State, City, Shift and Specialty ub Job details screen matches Jobs dashboard for given job id
 
-Example for #14: Attached Screenshot1
+    ## Logging into the Secure Area
 
-Example for #17: Attached Screenshot2
+To test the login functionality of The Internet Guinea Pig Website, follow these steps:
 
-# **Additional instructions**
-1. Folder structure and sample files have been provided for reference, candidate are free to make modification and delete as required
-2. The step definations has to be created as part of assessment
-3. Report should contain screen shot for all Verification steps
+1. Ensure you are on the login page of the website.
+2. Enter the username and password as provided in the examples below.
+3. Check if the flash message displayed matches the expected message.
+
+### Example Scenarios
+
+#### Scenario 1: Successful Login
+
+- **Username:** tomsmith
+- **Password:** SuperSecretPassword!
+- **Expected Message:** You logged into a secure area!
+
+#### Scenario 2: Invalid Login
+
+- **Username:** foobar
+- **Password:** barfoo
+- **Expected Message:** Your username is invalid!
+
+
